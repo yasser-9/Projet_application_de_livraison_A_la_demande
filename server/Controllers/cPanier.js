@@ -2,6 +2,9 @@ const Utilisateur = require("../models/Utilisateur");
 const Produit = require("../models/Produit");
 const Commande = require("../models/Commande");
 
+// To do: get commands au lieu de getPanier
+const getPanier = async (req, res) => {};
+
 // Confirmer la commande
 const validerPanier = async (req, res) => {
   const user = await Utilisateur.findById(req.body.UtilisateurId);
