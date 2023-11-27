@@ -28,7 +28,7 @@ const cartReducer = (state, action) => {
       //attribue l'élément existant et ajoute le montant saisi au montant de l'élément existant à la variable updateItem
       const updatedItem = {
         ...existingItem,
-        amount: existingItem.amount + action.item.amount,
+        amount: existingItem.amount + action.item.amount, // est ce que c'est bien des nombres ici?
       };
 
       //Récupère tous les articles du panier et attribue la variable updateItem à l'article existant
@@ -54,7 +54,7 @@ const cartReducer = (state, action) => {
 
     //Trouver le montant total précis
     const updatedTotalAmount =
-      state.totalAmount - existingItem?.price * existingItem.amount;
+      state.totalAmount - existingItem?.price * existingItem.amount; // est ce que ce sont bien des nombres ici?
     let updatedItems;
 
     updatedItems = state.items.filter((item) => item.id !== action.id);

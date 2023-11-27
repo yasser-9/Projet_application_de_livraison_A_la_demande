@@ -43,7 +43,7 @@ function CheckoutModal({ openModal, closeModal, modalIsOpen }) {
     event.preventDefault();
     // console.log(formData);
 
-    fetch("http://localhost:5000/utilisateur", {
+    fetch("http://localhost:5001/utilisateur", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function CheckoutModal({ openModal, closeModal, modalIsOpen }) {
         const ListeProduitsNames = ListeProduits.map((item) => {
           return { Titre: item.name, Quantite: item.amount };
         });
-        fetch("http://localhost:5000/valider-panier", {
+        fetch("http://localhost:5001/valider-panier", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

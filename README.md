@@ -1,7 +1,7 @@
 # Projet web avance
 
-```sh
-./build.sh # construction des images docker
+```sh 
+./build.sh # construction des images docker <- vous pouvez demander le build des images à docker-compose directement !
 ./start.sh # lancement des services avec docker-compose
 ```
 

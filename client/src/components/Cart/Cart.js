@@ -26,7 +26,7 @@ const Cart = (props) => {
   };
 
 
-  var cartItems = cartCtx.items.map((item) => (
+  const cartItems = cartCtx.items.map((item) => (
     <CartItem
       name={item.name}
       amount={item.amount}
