@@ -38,7 +38,7 @@ const HeroThreeSection = () => {
   const [dishList, setDishList] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("http://localhost:5000/produits")
+    fetch("http://localhost:5001/produits")
       .then((res) => res.json())
       .then(setDishList);
   }, []);
